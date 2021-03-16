@@ -1,70 +1,113 @@
-# Getting Started with Create React App
+# Photodeck
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Project Description
 
-## Available Scripts
+Photodeck is an App build usiing React and Airtable where users will be able to upload photos of their choosing along with text content. From the homepage, you will be able to navigate to add a new post as well as see previous posts from other users. The app will be open to everyone to add photos as well as clear out any previous content.
 
-In the project directory, you can run:
+## Wireframes
 
-### `npm start`
+Wireframes have been created for desktop, tablet, and mobile screens. On the home page, you will see all previous posts from users and a header that contains the name of the app Photodeck as well two clickable icons Home and Pictorialize. Pictorialize will naviagte you to the form screen where users willbe able to add a username, upload a photo, and input text content. All the screens will center when the size decreases.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+![imageAlt](https://i.imgur.com/2rjKIY2l.png)
+![imageAlt](https://i.imgur.com/PNRrxKwl.png)
+![imageAlt](https://i.imgur.com/Kj6Aht9l.png)
+![imageAlt](https://i.imgur.com/hc8ZYn6l.png)
+![imageAlt](https://i.imgur.com/BoPV6Tgl.png)
+![imageAlt](https://i.imgur.com/zMlHyH1l.png)
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## Component Hierarchy
 
-### `npm test`
+![imageAlt](https://i.imgur.com/GFa2Uhvl.png)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## API and Data Sample
 
-### `npm run build`
+```
+{
+    "records": [
+        {
+            "id": "recynP17ul24dneJD",
+            "fields": {
+                "username": "beatjunkie",
+                "userText": "This is for the first post for proposal.",
+                "photoURL": "https://imgur.com/KjNUS1b"
+            },
+            "createdTime": "2021-03-15T14:05:50.000Z"
+        },
+        {
+            "id": "recvIVFvIpNNxbIfH",
+            "fields": {},
+            "createdTime": "2021-03-15T14:05:50.000Z"
+        },
+        {
+            "id": "rec0rhsuGDaXqinsI",
+            "fields": {},
+            "createdTime": "2021-03-15T14:05:50.000Z"
+        }
+    ],
+    "offset": "rec0rhsuGDaXqinsI"
+}
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### MVP/PostMVP
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+#### MVP
 
-### `npm run eject`
+- Home page with clickable icons that route to each respective feed.
+- Get and post uploaded photo from Airtable.
+- Use forms to create new posts with user name text input while updating Airtable.
+- Delete posts from the feed and airtable.
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+#### PostMVP
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- Yeet! (like) button functional.
+- Add a new function allowing users to comment on posts.
+- Work with external API to generate a random photo for user.
+- Add a search bar to look up content on Photodeck.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+## Project Schedule
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+| Day      | Deliverable                                | Status   |
+| -------- | ------------------------------------------ | -------- |
+| Mar 15   | Proposal Approval / Airtable Setup         | Incomplete |
+| Mar 16   | Component Creation / Get, Set, Delete Data | Incomplete |
+| Mar 17   | Mar 16 cont'd / CSS Components             | Incomplete |
+| Mar 18   | CSS Components cont'd / MVP                | Incomplete |
+| Mar 19   | Advanced CSS                               | Incomplete |
+| Mar 22   | Presentations                              | Incomplete |
 
-## Learn More
+## Timeframes
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+| Component                 | Priority | Estimated Time | Time Invested | Actual Time |
+| ------------------------- | :------: | :------------: | :-----------: | :---------: |
+| Proposal                  |    H     |      2hrs      |     hrs      |    hrs     |
+| Airtable setup            |    H     |     .5hrs      |      hrs      |     hrs     |
+| Clickable icons           |    H     |      1hrs      |      hrs      |     hrs     |
+| Data population pg 1      |    H     |      3hrs      |     hrs      |    hrs     |
+| Data population pg 2      |    H     |      3hrs      |     hrs      |    hrs     |
+| Data population pg 3      |    H     |      3hrs      |     hrs      |    hrs     |
+| Form creation pg 1        |    H     |      2hrs      |     hrs      |    hrs     |
+| Data creation/update pg 1 |    H     |      3hrs      |     hrs      |    hrs     |
+| Component CSS pg 1        |    H     |      3hrs      |     hrs      |    hrs     |
+| Component CSS pg 2        |    H     |      3hrs      |     hrs      |    hrs     |
+| Component CSS pg 3        |    H     |      3hrs      |     hrs      |    hrs     |
+| Proposal                  |    H     |      2hrs      |     hrs      |    hrs     |
+| Total                     |    H     |    42.5hrs     |     hrs     |    hrs    |
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## SWOT Analysis
 
-### Code Splitting
+### Strengths:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+I have a better understanding of what is expected going into project two week. With the planning and research done for this proposal and the experience from project one, I can plan out my time accordingly to stick to my timeline as closely as possible.
 
-### Analyzing the Bundle Size
+### Weaknesses:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+I don't feel totally comfortable creating a React app on my own without class giudance but I am prepared to call upon previous labs, lessons, and homework to build confidence.
 
-### Making a Progressive Web App
+### Opportunities:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+React has been a challenge in general but I am looking forward to building something on my own and testing what I have comprehended thus far.
 
-### Advanced Configuration
+### Threats:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+I usually try my best to solve issues without asking for help but have learned recently how costly that is time wise during project week.
