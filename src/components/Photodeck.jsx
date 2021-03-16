@@ -17,3 +17,5 @@ function Photodeck(props) {
     </div>
   )   
 }
+
+export default Photodeck;
