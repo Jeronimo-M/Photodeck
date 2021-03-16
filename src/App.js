@@ -1,23 +1,33 @@
-import logo from './logo.svg';
+import { useEffect, useState } from "react";
+import { Route } from "react-router-dom";
+import { baseURL, config } from "./services";
 import './App.css';
+import axios from "axios";
+import Photodeck from "./components/Photodeck";
+import Navbar from "./components/Navbar";
+
 
 function App() {
+  const [photodeck, setPhotodeck] = useState([]);
+
+  useEffect(() => {
+    const grabAirtable = async () => {
+      const resp = await axios.get(baseURL, config);
+      console.log(resp.data)
+      setPhotodeck(resp.data.records);
+    
+    };
+    grabAirtable();
+  }, []);
+  
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Navbar />
+      <Route exact path="/">
+        <div className="photodeck-container">
+
+        </div>
+      </Route>
     </div>
   );
 }
