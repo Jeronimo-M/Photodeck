@@ -5,8 +5,10 @@ import Form from "./components/Form";
 import axios from "axios";
 import Photodeck from "./components/Photodeck";
 import Navbar from "./components/Navbar";
-// import Like from "./components/Like";
+import Header from "./components/Header";
+import Footer from "./components/Footer";
 import './App.css';
+
 
 
 function App() {
@@ -25,6 +27,7 @@ function App() {
   
   return (
     <div className="App">
+      <Header />
       <Navbar />
       <Route exact path="/">
         <div className="photodeck-container">
@@ -42,7 +45,7 @@ function App() {
       <Route path="/new">
         <Form photodeck={photodeck} setToggleFetch={setToggleFetch} />
       </Route>
-      
+      <Footer />
     </div>
   );
 }
