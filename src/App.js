@@ -30,6 +30,7 @@ function App() {
           {photodeck.map((photodeck) => (
             <Photodeck
               key={photodeck.id}
+              
               photodeck={photodeck}
               setToggleFetch={setToggleFetch}
             />
