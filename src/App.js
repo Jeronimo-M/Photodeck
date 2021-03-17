@@ -5,6 +5,7 @@ import Form from "./components/Form";
 import axios from "axios";
 import Photodeck from "./components/Photodeck";
 import Navbar from "./components/Navbar";
+// import Like from "./components/Like";
 import './App.css';
 
 
@@ -30,11 +31,12 @@ function App() {
           {photodeck.map((photodeck) => (
             <Photodeck
               key={photodeck.id}
-              
               photodeck={photodeck}
               setToggleFetch={setToggleFetch}
-            />
-          ))}
+              />
+              
+              ))}
+             
         </div>
       </Route>
       <Route path="/new">
@@ -44,5 +46,6 @@ function App() {
     </div>
   );
 }
+              
 
 export default App;

@@ -1,6 +1,7 @@
 import { baseURL, config } from "../services";
 import axios from "axios";
 import { useParams } from "react-router";
+import Like from "./Like";
 
 function Photodeck(props) {
   const { username, userText, photoURL } = props.photodeck.fields;
@@ -15,9 +16,10 @@ function Photodeck(props) {
 
   return (
     <div key={id}>
+      <a href="`${photoURL}`"><img src={photoURL} alt="image"></img></a>
       <h3>{username}</h3>
       <h4>{userText}</h4>
-      <a href="`${photoURL}`"><img src={photoURL} alt="image"></img></a>
+      <Like />
       <button onClick={deletePost}>Delete!</button>
     </div>
   )   
