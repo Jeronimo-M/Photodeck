@@ -17,7 +17,7 @@ function Photodeck(props) {
     <div key={id}>
       <h3>{username}</h3>
       <h4>{userText}</h4>
-      <p>{photoURL}</p>
+      <a href="`${photoURL}`"><img src={photoURL} alt="image"></img></a>
       <button onClick={deletePost}>Delete!</button>
     </div>
   )   
