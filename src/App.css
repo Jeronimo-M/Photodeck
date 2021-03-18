@@ -10,11 +10,13 @@
 
 
 #navbar {
-  background-color: rgb(184, 148, 31);
+  background-color: rgb(240, 235, 219);
   margin-bottom: 50px;
-  text-align: justify;
   font-size: medium;
   font-style: italic;
+  display: flex;
+  justify-content: center;
+  
 }
 
 
@@ -26,15 +28,13 @@ button {
   background-color: red;
 }
 
-#navbar {
-  text-align: center;
-}
+
 
 #form {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
-  margin-top: 50px;
+  margin-top: 100px;
 
 }
 
@@ -43,4 +43,25 @@ button {
   justify-content: flex-start;
   font-size: 8px;
   
+}
+
+#button-container {
+  display: flex;
+  align-items: baseline;
+  margin-left: 69px;
+}
+
+#homeButtons {
+  margin-left: 50px;
+}
+
+#user-container {
+  display: flex;
+  flex-direction: column;
+  align-items: baseline;
+  margin-left: 69px;
+}
+
+input::placeholder {
+  color: red;
 }

@@ -17,13 +17,22 @@ function Photodeck(props) {
   return (
     <div key={id}>
       <a href="`${photoURL}`"><img src={photoURL} alt="post"></img></a>
+      <div id="button-container">
+
+        <Like id="homeButtons" />
+        <button onClick={deletePost} id="homeButtons">Delete!</button>
+      </div>
+      <div id="user-container">
+
       <h1>{username}</h1>
       <h2>{userText}</h2>
-      <Like />
-      <button onClick={deletePost}>Delete!</button>
+      </div>
     </div>
   )   
 }
+      
+
+      
       
 export default Photodeck;
 
