@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 
 function Navbar() {
   return (
-    <nav>
+    <nav id="navbar">
       <Link to="/">Home </Link>
       <Link to="/new"> Pictorialize!</Link>
     </nav>

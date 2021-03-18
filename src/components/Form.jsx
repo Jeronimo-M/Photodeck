@@ -40,7 +40,7 @@ function Form(props) {
   };
 
   return (
-    <form onSubmit={handleSubmit}>
+    <form onSubmit={handleSubmit} id="form">
       <label htmlFor="username">Username:</label>
       <input
         required
@@ -65,7 +65,7 @@ function Form(props) {
         value={photoURL}
         onChange={(e) => setPhotoURL(e.target.value)}
       />
-      <button type="submit">Pictorialize!</button>
+      <button type="submit" id="formButton">Pictorialize!</button>
     </form>
   )
 }

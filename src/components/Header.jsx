@@ -2,7 +2,10 @@ import React from "react";
 
 function Header() {
   return (
-    <h1>Photodeck!</h1>
+    
+
+      <h1 id="header">Photodeck!</h1>
+    
   )
 }
 
