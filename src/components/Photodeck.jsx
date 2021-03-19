@@ -25,8 +25,11 @@ function Photodeck(props) {
           <button onClick={deletePost} id="homeButtons">Delete!</button>
         
         </div>
-      <h1>{username}</h1>
-      <h2>{userText}</h2>
+        <div id="user-info-container">
+          <h1>{username}</h1>
+          <h2>{userText}</h2>
+
+        </div>
       </div>
 
       

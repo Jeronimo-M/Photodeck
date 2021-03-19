@@ -30,7 +30,7 @@ function App() {
       <Header />
       <Navbar />
       <Route exact path="/">
-        <div className="photodeck-container">
+        <div>
           {photodeck.map((photodeck) => (
             <Photodeck
               key={photodeck.id}
