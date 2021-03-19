@@ -22,6 +22,8 @@
 
 button {
   background-color: yellow;
+  border-radius: 20px;
+  margin: 10px;
 }
 
 #header {
@@ -46,23 +48,54 @@ button {
   
 }
 
-#button-container {
-  display: flex;
-  align-items: baseline;
-  margin-left: 69px;
-}
 
-#homeButtons {
-  margin-left: 50px;
-}
 
-#user-container {
-  display: flex;
-  flex-direction: column;
-  align-items: baseline;
-  margin-left: 69px;
-}
+
+
 
 input::placeholder {
   color: red;
 }
+
+#photo-post-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#button-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  width: 100%;
+  
+}
+
+#image {
+border-radius: 20px;
+}
+
+/* h1, h2 {
+  display: flex;
+  justify-content: flex-start;
+  margin-right: 529px;
+} */
+
+.post {
+  display: flex;
+  flex-direction: column;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
