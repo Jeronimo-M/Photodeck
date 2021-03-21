@@ -22,16 +22,16 @@ function Photodeck(props) {
       
         <div id="button-container">
           <Like id="home-buttons" />
-          <button onClick={deletePost} id="homeButtons">Delete!</button>
+          <button onClick={deletePost} id="home-buttons">Delete!</button>
+        </div>
         
-        </div>
         <div id="user-info-container">
-          <h1>{username}</h1>
-          <h2>{userText}</h2>
-
+          <h1 className="user-info">{username}</h1>
+          <h2 className="user-info">{userText}</h2>
         </div>
-      </div>
 
+      </div>
+      <div className="post-divider"></div>
       
       
       
