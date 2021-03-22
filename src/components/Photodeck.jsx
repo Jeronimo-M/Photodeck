@@ -1,7 +1,10 @@
+import React from "react";
 import { baseURL, config } from "../services";
 import axios from "axios";
 import { useParams } from "react-router";
 import Like from "./Like";
+import '../App.css';
+
 
 
 function Photodeck(props) {
@@ -10,11 +13,10 @@ function Photodeck(props) {
 
   const deletePost = async () => {
     const photodeckURL = `${baseURL}/${props.photodeck.id}`;
-    console.log(props.photodeck.id)
     await axios.delete(photodeckURL, config);
     props.setToggleFetch((curr) => !curr);
   }
-
+    
   return (
     <div key={id} id="photo-post-container">
       <div className="post">
@@ -31,15 +33,18 @@ function Photodeck(props) {
         </div>
 
       </div>
-      <div className="post-divider"></div>
-      
-      
-      
+      <div className="post-divider" data-aos="fade-right"></div>
     </div>
   )   
 }
-
+      
 export default Photodeck;
+
+  
+
+      
+      
+
 
       
 

@@ -43,7 +43,7 @@ function Form(props) {
     <form onSubmit={handleSubmit} id="form">
       
 
-      <label htmlFor="username" class="input-box">Handle:</label>
+      <label htmlFor="username">Handle:</label>
       <input
         
         required="required"
@@ -74,7 +74,7 @@ function Form(props) {
         value={photoURL}
         onChange={(e) => setPhotoURL(e.target.value)}
       />
-      <button type="submit" id="formButton">Pictorialize!</button>
+      <button type="submit" id="formButton">Pic Me!</button>
     </form>
   )
 }

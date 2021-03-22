@@ -11,6 +11,7 @@ import './App.css';
 
 
 
+
 function App() {
   const [photodeck, setPhotodeck] = useState([]);
   const [toggleFetch, setToggleFetch] = useState(true);
@@ -18,13 +19,11 @@ function App() {
   useEffect(() => {
     const grabAirtable = async () => {
       const resp = await axios.get(baseURL, config);
-      console.log(resp.data)
       setPhotodeck(resp.data.records);
     };
     grabAirtable();
   }, [toggleFetch]);
-    
-  
+      
   return (
     <div className="App">
       <Header />
@@ -37,9 +36,7 @@ function App() {
               photodeck={photodeck}
               setToggleFetch={setToggleFetch}
               />
-            
               ))}
-             
         </div>
       </Route>
       <Route path="/new">
@@ -49,6 +46,10 @@ function App() {
     </div>
   );
 }
+    
+export default App;
+  
+            
+             
               
 
-export default App;
