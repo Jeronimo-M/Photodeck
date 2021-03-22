@@ -41,19 +41,24 @@ function Form(props) {
 
   return (
     <form onSubmit={handleSubmit} id="form">
-      <label htmlFor="username">Handle:</label>
+      
+
+      <label htmlFor="username" class="input-box">Handle:</label>
       <input
-        required
-        placeholder="Your Name Here"
+        
+        required="required"
+        placeholder="Your Name"
         id="username"
         type="text"
         value={username}
         onChange={(e) => setUsername(e.target.value)}
-      />
+        />
+        
       <label htmlFor="userText">Tell Me About It:</label>
       <input
-        required
-        placeholder="Description Here"
+        
+        required="required"
+        placeholder="Description"
         id="userText"
         type="text"
         value={userText}
@@ -61,7 +66,8 @@ function Form(props) {
       />
       <label htmlFor="photoURL">Your Photo:</label>
       <input
-        required
+        
+        required="required"
         placeholder="Photo URL Here"
         id="photoURL"
         type="text"
