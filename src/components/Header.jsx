@@ -2,9 +2,11 @@ import React from "react";
 
 function Header() {
   return (
-    
+    <div id="header">
+      <h1>Photodeck!</h1>
 
-      <h1 id="header">Photodeck!</h1>
+    </div>
+
     
   )
 }
